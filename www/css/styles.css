@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fonts/Snack_Omeal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'MiFuente', 'Roboto', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background 1s ease-in-out;
+    overflow: hidden;
+    position: relative; /* Asegúrate de que el body sea el contenedor para la superposición */
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición negra con 50% de opacidad */
+    pointer-events: none; /* Asegúrate de que la superposición no interfiera con las interacciones del usuario */
+    z-index: 1; /* Asegúrate de que la superposición esté en la parte superior */
+}
+
+#clock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Asegúrate de que el contenido esté encima de la superposición */
+}
+
+#time {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 75px;
+    font-family: 'MiFuente', sans-serif;
+}
+
+#date {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1em;
+}
+
+#weather {
+    position: absolute;
+    top: 20px; /* Ajusta este valor según sea necesario */
+    text-align: left;
+}
+
+#calendar {
+    position: absolute;
+    margin-top: 40px !important;
+    right: 20px;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+#weather-options {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(26, 24, 24, 0.623); /* dimgray con 50% de transparencia */
+    padding: 10px; /* Agrega un poco de padding para hacer que el texto no toque los bordes */
+    border-radius: 5px; /* Opcional: Agrega bordes redondeados */
+}
+
+#outlook {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2em;
+    text-align: right;
+    display: none;
+    visibility: hidden;
+}
+
+#temperature {
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#temperature img {
+    width: 50px; 
+    height: 50px;
+    margin-left: 10px;
+}
+
+#description {
+    margin-left: 20px !important; /* Ajusta este valor según sea necesario */
+    font-size: 18px;
+}
+
+.weather-detail {
+    display: flex;
+    align-items: center;
+}
+
+.weather-detail img {
+    width: 70px; 
+    height: 70px; 
+}
+
+.weather-detail span {
+    text-align: center;
+}
+
+.clickable-image {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    height: auto;
+}

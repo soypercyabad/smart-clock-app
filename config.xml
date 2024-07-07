@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.molibad.smartclock" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Smart Clock</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="percyulisesmolinaabad@gmail.com" href="">
+        Percy Abad
+    </author>
+    <content src="index.html" />
+
+    <!-- Permitir acceso a todas las URLs -->
+    <access origin="*" />
+    <preference name="orientation" value="landscape" />
+
+    <!-- Permitir acceso específico a las APIs de OpenWeatherMap -->
+    <access origin="http://api.openweathermap.org" />
+    <access origin="https://api.openweathermap.org" />
+
+    <!-- Permitir navegación a las URLs de OpenWeatherMap -->
+    <allow-navigation href="http://api.openweathermap.org/*" />
+    <allow-navigation href="https://api.openweathermap.org/*" />
+
+    <!-- Permitir intenciones de navegación a todas las URLs -->
+    <allow-intent href="*" />
+
+    <!-- Configuración del plugin de lista blanca -->
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-screen-orientation" spec="^3.0.2" />
+    <plugin name="cordova-plugin-customurlscheme" spec="^5.0.2">
+        <variable name="URL_SCHEME" value="com.molibad.smartclock" />
+    </plugin>
+</widget>
