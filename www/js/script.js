@@ -374,7 +374,7 @@ function formatDate(date) {
 
 async function updateCalendar() {
   document.getElementById("calendar").innerHTML = `
-    <img src="icons/social/outlook.svg" alt="Outlook Logo" class="clickable-image" onclick="signIn()">
+    <img src="icons/social/outlook.svg" alt="Outlook Logo" class="clickable-image" ">
   `;
 }
 
