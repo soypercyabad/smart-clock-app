@@ -1,4 +1,5 @@
 let notificationId = 0; // Variable global para el ID de notificación
+
 let KeysWeatherbit = [
   { key: CONFIG.WEATHERBIT_API_URL_UV_API_KEY_PRIMARY, callsRemaining: 0, resetTimestamp: 0 },
   { key: CONFIG.WEATHERBIT_API_URL_UV_API_KEY_SECUNDARY, callsRemaining: 0, resetTimestamp: 0 },
